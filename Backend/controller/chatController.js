@@ -41,7 +41,8 @@ const saveMessage = async (req, res) => {
         headers: {
           Authorization: `Bearer ${OPENROUTER_API_KEY}`,
           "Content-Type": "application/json",
-          "HTTP-Referer": "http://localhost:5173/",
+          // "HTTP-Referer": "http://localhost:5173/",
+          "HTTP-Referer": "https://chatbot-frontend-kskl.onrender.com",
           "X-Title": "ChatBot",
         },
       }
