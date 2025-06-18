@@ -73,57 +73,29 @@ npm run server
 Architecture Diagram
 User <--> React Frontend <--> Express Server <--> MongoDB (Chat + Auth) <--> OpenAI API
 
-Screenshots
-![Screenshot 2025-06-18 182324](https://github.com/user-attachments/assets/5e2810a0-75bf-4058-a6f8-e134937fb7bb)
 
-
-🔐 Login Page
-
-💬 Chat Interface
-
-🙋‍♂️ Author
+Author
 Harshal Ingle
-📧 harshal@example.com
-🔗 Portfolio
+harshalingle11092001@gmail.com
 
-🏁 Notes
-Vercel/Netlify used for frontend hosting
+Notes
+render.com used for frontend hosting
 
 MongoDB Atlas for cloud database
 
 Tested on Chrome, Firefox, and mobile devices
 
-yaml
-Copy
-Edit
-
 ---
 
-### ✅ Checklist:
+###  Checklist:
 | Item                            | Status |
 |---------------------------------|--------|
-| Public GitHub repo              | ✅     |
-| Live deployed link              | ✅     |
-| Test credentials in README      | ✅     |
-| Setup instructions              | ✅     |
-| Architecture diagram (ASCII)    | ✅     |
-| Responsive UI                   | ✅     |
-| Bonus features                  | ✅     |
+| Public GitHub repo              | Done   |
+| Live deployed link              | Done   |
+| Test credentials in README      | Done   |
+| Setup instructions              | Done   |
+| Architecture diagram (ASCII)    | Done  |
+| Responsive UI                   | Done   |
 
 ---
-
-Agar aap chaho to me `screenshots` ke liye dummy PNGs bana du ya prompt template ka demo gif bhi create kar du. Batao?
-
-
-
-
-
-
-
-
-
-
-
-Tools
-
 
