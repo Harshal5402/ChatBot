@@ -1,64 +1,3 @@
-// import React, { useContext } from "react";
-// import { StoreContext } from "../context/StoreContext";
-
-// const Navbar = ({ setLogin, darkMode, setDarkMode, isLoggedIn, setToken }) => {
-//   const { token } = useContext(StoreContext);
-//   const handleLogout = () => {
-//     setToken("");
-//     localStorage.removeItem("token");
-//     window.location.href = "/";
-//   };
-
-//   return (
-//     <nav className="flex flex-col sm:flex-row justify-between items-center px-6 py-4 bg-white dark:bg-gray-800 shadow-md sticky top-0 z-50">
-//       <div className="text-3xl font-extrabold bg-gradient-to-r from-blue-600 to-indigo-600 text-transparent bg-clip-text flex items-center space-x-2">
-//         <i className="fas fa-robot text-indigo-600 dark:text-indigo-400 text-3xl drop-shadow-md"></i>
-//         <span>ChatBot</span>
-//       </div>
-
-//       <div className="flex items-center gap-4 mt-3 sm:mt-0">
-//         {isLoggedIn ? (
-//           <button
-//             onClick={handleLogout}
-//             className="px-4 py-2 bg-red-500 text-white font-semibold rounded hover:bg-red-600 transition-all duration-300 shadow-md"
-//           >
-//             Logout
-//           </button>
-//         ) : (
-//           <>
-//             <button
-//               onClick={() => setLogin("login")}
-//               className="px-4 py-2 border border-blue-500 text-blue-600 dark:text-blue-400 font-medium rounded hover:bg-blue-50 dark:hover:bg-gray-700 transition-all duration-300"
-//             >
-//               Sign In
-//             </button>
-//             <button
-//               onClick={() => setLogin("register")}
-//               className="px-4 py-2 bg-gradient-to-r from-blue-500 to-indigo-500 text-white font-semibold rounded hover:from-indigo-500 hover:to-blue-500 transition-all duration-300 shadow-md"
-//             >
-//               Sign Up
-//             </button>
-//           </>
-//         )}
-
-//         <button
-//           onClick={() => setDarkMode(!darkMode)}
-//           className="text-xl p-2 text-yellow-500 dark:text-yellow-300 hover:scale-110 transition"
-//           title="Toggle Theme"
-//         >
-//           {darkMode ? (
-//             <i className="fas fa-sun" />
-//           ) : (
-//             <i className="fas fa-moon" />
-//           )}
-//         </button>
-//       </div>
-//     </nav>
-//   );
-// };
-
-// export default Navbar;
-
 import React, { useContext, useState, useRef, useEffect } from "react";
 import { StoreContext } from "../context/StoreContext";
 
@@ -73,7 +12,7 @@ const Navbar = ({ setLogin, darkMode, setDarkMode, isLoggedIn, setToken }) => {
     window.location.href = "/";
   };
 
-  // Hide dropdown if clicked outside
+ 
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
@@ -87,7 +26,8 @@ const Navbar = ({ setLogin, darkMode, setDarkMode, isLoggedIn, setToken }) => {
   return (
     <nav className="w-full sticky top-0 z-50 bg-white dark:bg-gray-800 shadow-md px-4 sm:px-6 py-3">
       <div className="flex items-center justify-between">
-        {/* Logo - always on left */}
+        
+        {/* Logo -  left section */}
         <div className="flex items-center gap-2 text-2xl sm:text-3xl font-extrabold bg-gradient-to-r from-blue-600 to-indigo-600 text-transparent bg-clip-text">
           <i className="fas fa-robot text-indigo-600 dark:text-indigo-400 drop-shadow-md"></i>
           <span>ChatBot</span>

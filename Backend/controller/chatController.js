@@ -4,7 +4,7 @@ import axios from "axios";
 
 const OPENROUTER_API_KEY = process.env.OPENROUTER_API_KEY;
 
-// Save Chat Message
+
 const saveMessage = async (req, res) => {
   try {
     const userId = req.userId;
@@ -24,7 +24,7 @@ const saveMessage = async (req, res) => {
 
     await userMsg.save();
 
-    console.log("User message saved"); // DEBUG
+    console.log("User message saved"); 
 
     const response = await axios.post(
       "https://openrouter.ai/api/v1/chat/completions",
@@ -35,7 +35,7 @@ const saveMessage = async (req, res) => {
           { role: "system", content: "You are a helpful chatbot assistant." },
           { role: "user", content: message },
         ],
-        max_tokens: 1000, // ✅ ADD THIS
+        max_tokens: 1000, 
       },
       {
         headers: {
@@ -72,7 +72,7 @@ const saveMessage = async (req, res) => {
   }
 };
 
-// Get Chat Messages of Authenticated User
+
 const getMessages = async (req, res) => {
   try {
     const messages = await Chat.find({ userId: req.userId });
